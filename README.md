@@ -17,7 +17,3 @@ Disponível no Moodle da disciplina.
 ## Ferramentas
 
 * https://excalidraw.com
-
-## Bibliografia
-
-* https://gohorse.com.br/extreme-go-horse-xgh.html
