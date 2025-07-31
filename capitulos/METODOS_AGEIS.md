@@ -1,3 +1,5 @@
+![![liascript_button.svg](../imagens/liascript_button.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/CTISM-Prof-Henry/softwareEngineering/main/capitulos/METODOS_AGEIS.md#1)
+
 # Métodos Ágeis
 
 Segundo Prikladinicki et. al em seu livro "Métodos Ágeis para Desenvolvimento de Software" (2014)[^1], o foco dos métodos 
@@ -50,16 +52,72 @@ Segundo o autor:
 | Pressupostos fundamentais               | Sistemas totalmente especificáveis, previsíveis; desenvolvidos a partir de um planejamento extensivo e meticuloso  | Software adaptativo e de alta qualidade; pode ser desenvolvido por equipes pequenas utilizando os princípios da melhoria contínua do projeto e testes orientados a rápida resposta a mudanças  |
 | Controle                                | Orientado a processos                                                                                                | Orientado a pessoas                                                                                                                                                                                |
 | Estilo de gerenciamento                 | Comandar e controlar                                                                                                 | Liderar e colaborar                                                                                                                                                                                |
-| Gestão do conhecimento                 | Explícito                                                                                                           | Tácito                                                                                                                                                                                            |
-| Atribuição de papéis                 | Individual – favorece a especialização                                                                             | Times auto-organizáveis – favorece a troca de papéis                                                                                                                                             |
-| Comunicação                           | Formal                                                                                                               | Informal                                                                                                                                                                                           |
+| Gestão do conhecimento                 | Explícito                                                                                                           | Tácito                                                                                                                                                                                            |
+| Atribuição de papéis                 | Individual – favorece a especialização                                                                             | Times auto-organizáveis – favorece a troca de papéis                                                                                                                                             |
+| Comunicação                           | Formal                                                                                                               | Informal                                                                                                                                                                                           |
 | Ciclo do projeto                        | Guiado por tarefas ou atividades                                                                                     | Guiado por funcionalidades do produto                                                                                                                                                              |
-| Modelo de desenvolvimento               | Modelo de ciclo de vida (Cascata, Espiral, ou alguma variação)                                                     | Modelo iterativo e incremental de entregas                                                                                                                                                         |
-| Forma/estrutura organizacional desejada | Mecânica (burocrática com muita formalização)                                                                    | Orgânica (flexível e com incentivos a participação e cooperação social)                                                                                                                      |
+| Modelo de desenvolvimento               | Modelo de ciclo de vida (Cascata, Espiral, ou alguma variação)                                                     | Modelo iterativo e incremental de entregas                                                                                                                                                         |
+| Forma/estrutura organizacional desejada | Mecânica (burocrática com muita formalização)                                                                    | Orgânica (flexível e com incentivos a participação e cooperação social)                                                                                                                      |
 
+
+### Exemplo de método ágil: Scrum
+
+[Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)) é um dos vários frameworks de desenvolvimento ágil. 
+Ele foi criado inicialmente pelas obervações das práticas manufatureiras da Toyota, e posteriormente formalizado por 
+Ken Schwaber e Jeff Sutherland nos anos 90. Seu nome (Scrum) advém de um movimento feito no rugby, onde uma equipe tenta
+avançar no campo por passes e jogadas coordenadas.
+
+O Scrum deve ser entendido como um framework genérico, que descreve em alto nível o papel dos atores envolvidos, os 
+artefatos geraods e as cerimônias que devem ser tomadas após cada etapa. Segundo Prikladinicki e Magno[^1], ele pode ser
+descrito da seguinte forma:
+
+* Três papéis: Dono do Produto, ScrumMaster, e Equipe de Desenvolvimento;
+* Três artefatos: Backlog do Produto, Incremento do Produto, e Backlog da Sprint;
+* Quatro cerimônias: reunião de planejamento da Sprint, Scrum diárias, Revisão da Sprint, e Retrospectiva da Sprint.
+
+### Outro exemplo de método ágil: eXtreme Programming
+
+eXtreme Programming (abreviado para XP) foi criado por Kent Beck depois de um trabalho realizado na montadora Chrysler.
+Ele advém de uma experiência de Beck em criar um software para folha de pagamento que já vinha tendo um desenvolvimento
+arrastado. Ao empregar uma nova metodologia de desenvolvimento, adepta de mudanças radicais nos requisitos, conseguiu
+desenvolver o software com qualidade, tornando-se um case de sucesso da Engenharia de Software.
+
+Seus princípios são:
+
+* Revisão de código
+* Integração rápida
+* Testes automatizados
+* Feedback do cliente
+* Design simples
+
+Segundo Prikladinicki[^1] em seu livro:
+
+> A Programação Extrema usa boas práticas de engenharia de software de forma intensiva, o tempo todo! Se imaginarmos
+> que essas práticas podem ser controladas por botões que regulam as suas intensidades, XP os posiciona na potência
+> máxima. Por exemplo, se revisar o código é bom, então a revisão do código é feita constantemente por
+> programação em pares. Se testar aumenta a qualidade, então testes automatizados aumentarão mais ain- da a
+> qualidade e também facilitarão a tarefa de validação. Se testar antes de entregar evita erros, então fazer
+> Desenvolvimento Orientado a Testes (TDD) será melhor ainda. Se a opinião do cliente fornece feedback e direcionamento
+> para o desenvolvimento, então ter o acompanhamento constante do cliente validará cada funcionalidade. Todas essas
+> são boas práticas de engenharia de software que, em XP, são realizadas ao extremo.
+> 
+> A proposta de XP não é ser uma metodologia radicalmente técnica e imediatista. O extremismo vem da proposta de usar ao
+> máximo as boas práticas de engenharia de software já reconhecidas pela indústria. Sobretudo, o poder de XP está no 
+> conjunto das práticas. XP é um conjunto de práticas que se apoiam, criando sinergia.
+
+A XP é composta pelas seguintes características:
+
+* Cinco valores: Comunicação, Simplicidade, Coragem, Feedback e Respeito
+* Três papéis: Coach, Tracker e Cliente
+* Dois artefatos: Cartões de história, Metáfora
+
+
+#### Cartões de história
+
+![cartao_historia.png](../imagens/cartao_historia.png)
 
 
 ## Bibliografia 
 
 [^1]: Prikladinicki, R., de Almeida, E. S., & de Souza, J. T. (2014). Métodos ágeis para desenvolvimento de software. 
-Disponível [neste link](https://integrada.minhabiblioteca.com.br/reader/books/9788582602089). Acesso em 30/07/2025.  
+Disponível [neste link](https://integrada.minhabiblioteca.com.br/reader/books/9788582602089). Acesso em 30/07/2025.
