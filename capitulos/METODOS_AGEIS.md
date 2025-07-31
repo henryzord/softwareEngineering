@@ -1,4 +1,4 @@
-![![liascript_button.svg](../imagens/liascript_button.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/CTISM-Prof-Henry/softwareEngineering/main/capitulos/METODOS_AGEIS.md#1)
+[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/CTISM-Prof-Henry/softwareEngineering/main/capitulos/METODOS_AGEIS.md#1)
 
 # Métodos Ágeis
 
