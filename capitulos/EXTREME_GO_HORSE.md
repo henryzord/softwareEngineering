@@ -19,8 +19,8 @@ ao infinito.
 6. **Commit sempre antes de update.** Se der problema, a sua parte estará sempre correta... e seus colegas que se virem.
 7. **XGH não tem prazo.** Os prazos passados pelo seu cliente são meros detalhes. Você **sempre** conseguirá implementar **tudo** no tempo 
 necessário (nem que isso implique em acessar o BD por um script maluco).
-8. **Esteja preparado para pular fora quando o barco começar a afundar.**.. ou coloque a culpa em alguém (ou algo). Para quem usa XGH, um dia o barco afunda. Quanto mais o tempo passa, mais o sistema vira um monstro. O dia que a casa
-cair, é melhor você já estar procurando vagas no Linkedin, ou ter alguém, ou algo para colocar a culpa.
+8. **Esteja preparado para pular fora quando o barco começar a afundar... ou coloque a culpa em alguém.** Para quem usa XGH, um dia o barco afunda. Quanto mais o tempo passa, mais o sistema vira um monstro. O dia que a casa
+cair, é melhor você já estar procurando vagas no Linkedin, ou ter alguém para colocar a culpa.
 9. **Seja autêntico, XGH não respeita padrões.** Escreva o código como você bem entender, se resolver o problema, commit e era isso.
 10. **Não existe refactoring, apenas rework.** Se der problema, refaça um XGH rápido que solucione o problema. O dia que o seu chefe implicar em reescrever a 
 aplicação toda, pule fora, o barco irá afundar.
@@ -41,7 +41,7 @@ gerenciar o XGH, ele é auto-suficiente, assim como o caos.
 18. **O XGH é seu irmão, mas é vingativo.** Enquanto você quiser, o XGH sempre estará do seu lado. Mas cuidado, não o abandone. Se começar um sistema utilizando XGH
 e abandoná-lo para utilizar uma metodologia da moda, você estará perdido. O XGH não permite refactoring, e seu novo 
 sistema cheio de frescuras entrará em colapso. E nessa hora, somente o XGH poderá salvá-lo.
-19. **Se tiver funcionando, não meta a mão.** Nunca altere, e muito menos questione um código funcionando. Isso é perda de tempo, mesmo porque refactoring não
+19. **Se estiver funcionando, não meta a mão.** Nunca altere, e muito menos questione um código funcionando. Isso é perda de tempo, mesmo porque refactoring não
 existe. Tempo é a engrenagem que move o XGH e qualidade é um detalhe desprezível.
 20. **Teste é para os fracos.** Se você meteu a mão num sistema XGH, é melhor saber o que está fazendo. E se você sabe o que está fazendo, vai testar
 por quê? Testes são desperdício de tempo, se o código compilar, é o suficiente.
