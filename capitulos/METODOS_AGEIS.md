@@ -80,15 +80,8 @@ descrito da seguinte forma:
 eXtreme Programming (abreviado para XP) foi criado por Kent Beck depois de um trabalho realizado na montadora Chrysler.
 Ele advém de uma experiência de Beck em criar um software para folha de pagamento que já vinha tendo um desenvolvimento
 arrastado. Ao empregar uma nova metodologia de desenvolvimento, adepta de mudanças radicais nos requisitos, conseguiu
-desenvolver o software com qualidade, tornando-se um case de sucesso da Engenharia de Software.
-
-Seus princípios são:
-
-* Revisão de código
-* Integração rápida
-* Testes automatizados
-* Feedback do cliente
-* Design simples
+desenvolver o software com qualidade, tornando-se um case de sucesso da Engenharia de Software. Ela é pautada por 
+revisão de código, integração rápida, testes automatizados, feedback do cliente e design simples. 
 
 Segundo Prikladinicki[^1] em seu livro:
 
@@ -105,11 +98,36 @@ Segundo Prikladinicki[^1] em seu livro:
 > máximo as boas práticas de engenharia de software já reconhecidas pela indústria. Sobretudo, o poder de XP está no 
 > conjunto das práticas. XP é um conjunto de práticas que se apoiam, criando sinergia.
 
+Seus princípios são:
+
+* Humanidade
+* Economia
+* Melhoria
+* Benefício mútuo
+* Semelhança
+* Diversidade
+* Passos pequenos
+* Reflexão
+* Fluxo
+* Oportunidade
+* Redundância
+* Falha
+* Qualidade
+* Aceitação de responsabilidade
+
+E seus valores são:
+
+* Comunicação
+* Simplicidade
+* Coragem
+* Feedback
+* Respeito
+
 A XP é composta pelas seguintes características:
 
-* Cinco valores: Comunicação, Simplicidade, Coragem, Feedback e Respeito
 * Três papéis: Coach, Tracker e Cliente
 * Dois artefatos: Cartões de história, Metáfora
+* Cerimônias: Jogo do planejamento, releases e iterações. 
 
 
 #### Cartões de história
