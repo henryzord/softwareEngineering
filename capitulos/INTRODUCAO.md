@@ -40,7 +40,7 @@ Uma representação simplificada de um processo de software, apresentado sob per
 Cerca de 60 por cento dos custos são de desenvolvimento, 40 por cento são custos de teste. Para software sob encomenda,
 os custos de evolução excedem frequentemente os custos de desenvolvimento.
 
-```meriaid
+```mermaid
 pie title Custo de desenvolvimento de software
     "Desenvolvimento" : 60
     "Testes" : 40
