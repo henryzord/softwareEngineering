@@ -27,14 +27,24 @@ incluindo hardware, software e engenharia de processo. A engenharia de software 
 
 Um conjunto de atividades cujo objetivo é o desenvolvimento ou a evolução de software.
 
+![processo_software_generico.png](../imagens/processo_software_generico.png)
+
 ## O que é um modelo de processo de software?
 
 Uma representação simplificada de um processo de software, apresentado sob perspectiva específica.
 
+![modelo_processo_software_cascata.png](../imagens/modelo_processo_software_cascata.png)
+
 ## Quais são os custos da engenharia de software?
 
 Cerca de 60 por cento dos custos são de desenvolvimento, 40 por cento são custos de teste. Para software sob encomenda,
-os custos de evolução freqüentemente excedem os custos de desenvolvimento.
+os custos de evolução excedem frequentemente os custos de desenvolvimento.
+
+```meriaid
+pie title Custo de desenvolvimento de software
+    "Desenvolvimento" : 60
+    "Testes" : 40
+```
 
 ## O que são métodos de engenharia de software?
 
