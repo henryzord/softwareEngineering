@@ -29,6 +29,7 @@ Eu preparo o conteúdo das minhas aulas (e das provas) com base nos livros!
 2. Sommervile, I. Engenharia de Software. 9ª Edição. (2011).
 3. Prikladinicki, R., de Almeida, E. S., & de Souza, J. T. (2014). Métodos ágeis para desenvolvimento de software. Disponível [neste link](https://integrada.minhabiblioteca.com.br/reader/books/9788582602089). Acesso em 30/07/2025.
 
-## Ferramentas
+## Outros recursos
 
+* [Tutorial configuração GitHub](https://docs.google.com/presentation/d/1JtJM38hLLYEJfo3QtYNRS3s0HGgA4PkT)
 * https://excalidraw.com
