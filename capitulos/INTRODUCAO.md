@@ -1,7 +1,8 @@
+[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/CTISM-Prof-Henry/softwareEngineering/main/capitulos/INTRODUCAO.md)
+
 # Introdução
 
-As seguintes perguntas e respostas foram adaptadas do _livro Sommerville, Ian: Engenharia de Software 9ª edição. Pearson
-Prentice Hall, 2011._
+As seguintes perguntas e respostas foram adaptadas do livro de Engenharia de Software do Sommerville[^1]:
 
 ## O que é software?
 
@@ -52,5 +53,9 @@ usável.
 
 ## Quais são os desafios-chave da engenharia de software?
 
-Estar à altura do aumento de diversidade, demandas para reduçao do tempo de entrega e desenvolvimento de software digno
+Estar à altura do aumento de diversidade, demandas para redução do tempo de entrega e desenvolvimento de software digno
 de confiança.
+
+## Bibliografia
+
+[^1]: Sommerville, Ian: Engenharia de Software 9ª edição. Pearson Prentice Hall, 2011.
