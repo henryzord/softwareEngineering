@@ -85,8 +85,40 @@ flowchart TD
     end
 ```
 
+O modelo incremental é mais adequado a sistemas que mudam de requisitos a cada rodada de desenvolvimento, ou que possuem
+especificações para as quais não se conhece a totalidade do cenário a ser implementado (por exemplo, funcionalidades em 
+uma rede social). Este é um modelo usado principalmente pelos metodos ágeis.
+
+Em contrapartida, o modelo incremental possui duas desvantagens frente ao modelo em cascata:
+
+* A tendência é que a estrutura interna do software se degrade a medida que novos recursos são adicionados, exigindo que
+  refatoração seja utilizada. Do contrário, novas modificações no sistema serão difíceis e onerosas.
+* É difícil acompanhar a progressão do projeto. Os gerentes de projeto precisam de entregas regulares para mensurar o 
+  progresso do desenvolvimento. Por outro lado, se o software for desenvolvido muito rapidamente, não é economicamente
+  viável gerar artefatos (e.g. documentação) para cada versão do software.
+
 ### Modelo orientado a reuso
 
+O modelo de software orientado a reuso reutiliza componentes já desenvolvidos de outros projetos. Por exemplo, podemos
+considerar a biblioteca [Bootstrap](https://getbootstrap.com) como um exemplo simples dessa prática. Todavia, componentes
+específicos (como interfaces de acesso a banco de dados, entrada e saída, etc) também podem ser reutilizados.
+
+```mermaid
+flowchart TD
+
+    A["Especificação de requisitos"]
+    B["Análise de componentes"]
+    C["Alterações nos requisitos"]
+    D["Projeto de sistema com reuso"]
+    E["Desenvolvimento e integração"]
+    F["Validação de sistema"]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+```
 
 ## Bibliografia
 
