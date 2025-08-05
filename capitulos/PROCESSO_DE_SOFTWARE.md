@@ -120,6 +120,16 @@ flowchart TD
     E --> F
 ```
 
+## Atividades do processo
+
+### Especificação
+
+### Projeto e implementação
+
+### Validação
+
+### Evolução
+
 ## Bibliografia
 
 [^1]: Sommerville, I. Engenharia de Software. 9ª Edição. (2011).
