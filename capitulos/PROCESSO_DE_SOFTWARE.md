@@ -20,12 +20,18 @@ anterior. Caso alguma tarefa fique pendente ou incompleta, proveniente de uma et
 avançar até que todas as pendências sejam resolvidas.
 
 ```mermaid
-stateDiagram-v2
-    A: Definição de Requisitos
-    B: Projeto de sistema e software
-    C: Implementação e teste unitário
-    D: Integração e teste de sistema
-    E: Operação e manutenção
+flowchart TD
+    style A fill:#BEE3DB,stroke:#333,stroke-width:2px
+    style B fill:#BEE3DB,stroke:#333,stroke-width:2px
+    style C fill:#BEE3DB,stroke:#333,stroke-width:2px
+    style D fill:#BEE3DB,stroke:#333,stroke-width:2px
+    style E fill:#BEE3DB,stroke:#333,stroke-width:2px    
+    
+    A["Definição de Requisitos"]
+    B["Projeto de sistema e software"]
+    C["Implementação e teste unitário"]
+    D["Integração e teste de sistema"]
+    E["Operação e manutenção"]
 
     A --> B
     B --> C
@@ -48,6 +54,16 @@ usuários, e continuar por meio da criação de várias versões até que um sis
 
 ```mermaid
 flowchart TD
+    style A fill:#BEE3DB,stroke:#333,stroke-width:2px
+    
+    style B fill:#FFD6BA,stroke:#333,stroke-width:2px
+    style C fill:#FFD6BA,stroke:#333,stroke-width:2px
+    style D fill:#FFD6BA,stroke:#333,stroke-width:2px
+    
+    style E fill:#FAF9F9,stroke:#333,stroke-width:2px
+    style F fill:#FAF9F9,stroke:#333,stroke-width:2px
+    style G fill:#FAF9F9,stroke:#333,stroke-width:2px
+
 
     A[Descrição do esboço]
     
@@ -105,7 +121,14 @@ específicos (como interfaces de acesso a banco de dados, entrada e saída, etc)
 
 ```mermaid
 flowchart TD
-
+    style A fill:#BEE3DB,stroke:#333,stroke-width:2px
+    style B fill:#BEE3DB,stroke:#333,stroke-width:2px
+    style C fill:#BEE3DB,stroke:#333,stroke-width:2px
+    style D fill:#BEE3DB,stroke:#333,stroke-width:2px
+    style E fill:#BEE3DB,stroke:#333,stroke-width:2px
+    style F fill:#BEE3DB,stroke:#333,stroke-width:2px
+    
+    
     A["Especificação de requisitos"]
     B["Análise de componentes"]
     C["Alterações nos requisitos"]
