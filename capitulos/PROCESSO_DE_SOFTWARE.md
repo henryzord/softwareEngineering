@@ -113,6 +113,13 @@ Em contrapartida, o modelo incremental possui duas desvantagens frente ao modelo
   progresso do desenvolvimento. Por outro lado, se o software for desenvolvido muito rapidamente, não é economicamente
   viável gerar artefatos (e.g. documentação) para cada versão do software.
 
+#### Modelo em espiral (Boehm)
+
+É um subtipo de modelo incremental, em que a análise de riscos do software é incorporada ao processo de desenvolvimento, 
+bem como o desenvolvimento de protótipos para mitigação de certos riscos.
+
+![modelo_espiral.png](../imagens/modelo_espiral.png)
+
 ### Modelo orientado a reuso
 
 O modelo de software orientado a reuso reutiliza componentes já desenvolvidos de outros projetos. Por exemplo, podemos
@@ -351,6 +358,20 @@ flowchart LR
     F --> B
     
 ```
+
+## Lidando com mudanças
+
+Segundo Sommerville[^1], é inevitável que ocorra mudança nos requisitos de um software durante seu desenvolvimento. 
+É preciso portanto lidar com as mudanças de maneira que minimize-se a quantidade de retrabalho necessário.
+
+Existem duas maneiras de lidar com mudanças: evitá-las ou acomodá-las.
+
+1. Na modalidade de evitar mudanças, pode-se projetar protótipos de um software, de maneira que o usuário possa 
+   experimentá-lo e fornecer feedback antes que o mesmo seja concluído;
+2. Na modalidade de acomodá-las, adota-se um projeto de desenvolvimento incremental, em que recursos do software são 
+   entregues gradualmente, prevenindo que muitos recursos sejam dispendidos para análise de requisitos que no futuro 
+   poderão ser descartados.
+
 
 ## Bibliografia
 
