@@ -27,11 +27,11 @@ flowchart TD
     style D fill:#BEE3DB,stroke:#333,stroke-width:2px
     style E fill:#BEE3DB,stroke:#333,stroke-width:2px    
     
-    A["Definição de Requisitos"]
-    B["Projeto de sistema e software"]
-    C["Implementação e teste unitário"]
-    D["Integração e teste de sistema"]
-    E["Operação e manutenção"]
+    A["Definição<br>de Requisitos"]
+    B["Projeto de<br>sistema e software"]
+    C["Implementação e<br>teste unitário"]
+    D["Integração e<br>teste de sistema"]
+    E["Operação<br>e manutenção"]
 
     A --> B
     B --> C
