@@ -30,7 +30,11 @@ Eu preparo o conteúdo das minhas aulas (e das provas) com base nos livros!
 3. Prikladinicki, R., de Almeida, E. S., & de Souza, J. T. (2014). Métodos ágeis para desenvolvimento de software. 
    Disponível [neste link](https://integrada.minhabiblioteca.com.br/reader/books/9788582602089). Acesso em 30/07/2025.
 
+> [!NOTE]
+> Para acessar os livros da Minha Biblioteca, faça login antes: https://portal.ufsm.br/biblioteca/leitor/minhaBiblioteca.html
+
 ## Outros recursos
 
 * [Tutorial configuração GitHub](https://docs.google.com/presentation/d/1JtJM38hLLYEJfo3QtYNRS3s0HGgA4PkT)
+* [Gestão de Projetos no GitHub](https://docs.google.com/presentation/d/1Ne7fYNrFPpXlzBTle5jOIbylwRhYKOqo/edit?usp=sharing&ouid=104461789119995870811&rtpof=true&sd=true)
 * https://excalidraw.com
