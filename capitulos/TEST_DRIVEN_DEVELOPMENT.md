@@ -4,6 +4,19 @@ O desenvolvimento orientado a testes (TDD, Test-Driven Development) foi inicialm
 integrante da metodologia Extreme Programming (XP)[^1]. A ideia é que o desenvolvedor escreva os testes _antes_ de 
 começar a desenvolver a nova funcionalidade. É considerada uma técnica de design de software, e não de testes. 
 
+Segundo Prikladinicki[^1], o Desenvolvimento orientado a testes deve seguir os seguintes passos:
+
+1. Escreva um teste automatizado, antes de escrever qualquer código de produção.
+2. Remova duplicações.
+
+O primeiro passo consiste em escrever um teste automatizado para uma funcionalidade que ainda não foi implementada. 
+Apesar de parecer estranho, é bem fácil de fazer, já que se escreve o que se espera da funcionalidade antes de 
+implementá-la, evitando vícios de implementação. A segunda consiste em aplicar [refatoração](REFATORACAO.md), uma 
+técnica que visa mudar a implementação interna do código-fonte sem contudo mudar seu comportamento externo.
+
+Os testes também podem ser utilizados como documentação do software, dado que descrevem no decorrer do tempo as 
+funcionalidades implementadas (por um software de controle de versão, como o git).
+
 Segundo Sommerville[^2], um diagrama de fluxo do Desenvolvimento Dirigido a Testes seria o seguinte:
 
 ```mermaid
@@ -21,11 +34,6 @@ flowchart LR
     if -- "não" --> A
     D --> C
 ```
-
-A ideia é que o desenvolvedor escreva testes automáticos antes de desenvolver as funcionalidades que serão testadas. 
-Desta maneira, é possível saber, de antemão, qual o comportamento desejado do software. Os testes também podem ser 
-utilizados como documentação do software, dado que descrevem no decorrer do tempo as funcionalidades implementadas 
-(por um software de controle de versão, como o git).
 
 >[!WARNING]
 > Atenção! Testes unitários não são testes automatizados!
@@ -62,6 +70,85 @@ levando em consideração a perspectiva do usuário final que fará uso do softw
 sistema realiza as funções esperadas, enquanto testes de aceitação validam que o sistema atende aos requisitos acordados 
 com o cliente ou usuário final.
 
+## Cobertura
+
+A cobertura de um conjunto de testes automatizados e unitários de software consiste em calcular quantos % do código está
+coberto (executado) pelos testes. Apesar de não ser uma relação 1:1 para a qualidade do software (por exemplo, um 
+software pode estar totalmente coberto por testes unitários automatizados e ainda assim não fazer o que o cliente 
+espera), é desejável que pelo menos a maioria do código-fonte seja testado antes de ser colocado em produção.
+
+Em Python, é possível ver a cobertura dos testes com a biblioteca `coverage`, pela linha de comando:
+
+```bash
+pip install coverage
+coverage run -m pytest -v
+coverage report  # gera um relatório na linha de comando
+coverage html  # gera um relatório em HTML
+```
+
+O relatório em HTML terá o seguinte aspecto, onde é possível ver a cobertura de arquivos, funções e classes (você 
+também pode conferí-lo [aqui](../html/python_coverage.html)):
+
+![coverage_python.png](../imagens/coverage_python.png)
+
+Em Java, a ferramenta para verificar a cobertura mais popular é o JaCoCo. 
+
+Você pode configurá-la no Intellij IDEA da seguinte forma:
+
+1. Adicione os seguintes plugins ao seu `pom.xml` (**NOTA:** as versões dos plugins e bibliotecas mudarão no futuro e 
+   este tutorial ficará defasado. Consulte um tutorial mais atualizado na internet!):
+
+   ```xml
+   <build>
+        <plugins>
+            <!-- JaCoCo plugin for code coverage -->
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.13</version>
+                <executions>
+                    <!-- Attach JaCoCo agent while running tests -->
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <!-- Generate report after tests -->
+                    <execution>
+                        <id>report</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <release>21</release>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+   ```
+   
+2. Crie uma nova configuração de execução do Maven:
+   
+   ![jacoco.gif](../imagens/jacoco.gif)
+
+3. Um relatório em HTML é gerado e armazenado em `target/site/jacoco/index.html` (você também pode vê-lo 
+   [aqui](../html/jacoco.html)):
+ 
+   ![jacoco_report.png](../imagens/jacoco_report.png)
+
 ## Escrevendo testes unitários
 
 ### Com JUnit
@@ -75,7 +162,7 @@ JUnit é o framework de testes unitários automatizados do Java. Para utilizá-l
        <dependency>
            <groupId>org.junit.jupiter</groupId>
            <artifactId>junit-jupiter</artifactId>
-           <version>5.10.2</version> <!-- use a última versão disponível -->
+           <version>5.10.2</version> <!-- coloque a última versão disponível ou a última compatível com seu projeto -->
            <scope>test</scope>
        </dependency>
    </dependencies>

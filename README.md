@@ -35,19 +35,20 @@ banco de dados) é de escolha livre dos alunos.
 ##### Protótipo
 
 * **Peso:** 10%
-* **Nota máxima:** Um protótipo navegável no Figma foi gerado. É possível entender as funcionalidades do software. 
+* **Nota máxima:** Um protótipo foi gerado no Figma. O protótipo pode ou não ser navegável. É possível entender as 
+  funcionalidades do software através do protótipo. 
 * **Nota mínima:** Nenhum protótipo foi feito; um esboço no papel foi gerado; não é possível entender as funcionalidades 
   do software pelo protótipo.
 
 ##### Diagramas UML
 
-* **Peso:** 5%
+* **Peso:** 10%
 * **Nota máxima:** Um diagrama de classes ou um diagrama de caso de uso está presente e a sintaxe e semântica está correta. 
 * **Nota mínima:** Nenhum diagrama foi apresentado, ou a sintaxe ou semântica está incorreta.
 
 ##### Documentação
 
-* **Peso:** 5%
+* **Peso:** 10%
 * **Nota máxima:** A documentação está hospedada no GitHub Pages e é gerada automaticamente a partir dos comentários do 
   código-fonte com uma GitHub Action.
 * **Nota mínima:** A documentação não está hospedada no GitHub Pages; a documentação não é gerada automaticamente a 
@@ -69,7 +70,7 @@ banco de dados) é de escolha livre dos alunos.
 
 ##### Produto final (software)
 
-* **Peso:** 40%
+* **Peso:** 30%
 * **Nota máxima:** O software atende completamente às expectativas do cliente (faz o que se propõe a fazer). 
 * **Nota mínima:** O software não atende às expectativas do cliente.
 
