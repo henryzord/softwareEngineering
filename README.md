@@ -39,9 +39,15 @@ banco de dados) é de escolha livre dos alunos.
 * **Nota mínima:** Nenhum protótipo foi feito; um esboço no papel foi gerado; não é possível entender as funcionalidades 
   do software pelo protótipo.
 
+##### Diagramas UML
+
+* **Peso:** 5%
+* **Nota máxima:** Um diagrama de classes ou um diagrama de caso de uso está presente e a sintaxe e semântica está correta. 
+* **Nota mínima:** Nenhum diagrama foi apresentado, ou a sintaxe ou semântica está incorreta.
+
 ##### Documentação
 
-* **Peso:** 10%
+* **Peso:** 5%
 * **Nota máxima:** A documentação está hospedada no GitHub Pages e é gerada automaticamente a partir dos comentários do 
   código-fonte com uma GitHub Action.
 * **Nota mínima:** A documentação não está hospedada no GitHub Pages; a documentação não é gerada automaticamente a 
