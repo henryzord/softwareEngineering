@@ -62,6 +62,154 @@ levando em consideração a perspectiva do usuário final que fará uso do softw
 sistema realiza as funções esperadas, enquanto testes de aceitação validam que o sistema atende aos requisitos acordados 
 com o cliente ou usuário final.
 
+## Escrevendo testes unitários
+
+### Com JUnit
+
+JUnit é o framework de testes unitários automatizados do Java. Para utilizá-lo:
+
+1. Adicione a biblioteca ao seu arquivo `pom.xml`:
+
+   ```xml
+   <dependencies>
+       <dependency>
+           <groupId>org.junit.jupiter</groupId>
+           <artifactId>junit-jupiter</artifactId>
+           <version>5.10.2</version> <!-- use a última versão disponível -->
+           <scope>test</scope>
+       </dependency>
+   </dependencies>
+   ```
+
+2. Crie uma pasta `test` dentro da pasta `src`. Para cada classe que você desejar testar, crie um arquivo 
+   `<nome_da_classe>Test.java`. Por exemplo, se você tem uma classe chamada `Ponto` em 
+   `src/main/java/org.henryzord.Ponto.java`, crie um arquivo `PontoTest.java` em 
+   `src/test/java/org.henryzord.PontoTest.java`.
+3. Supondo que seu código-fonte da classe `Ponto` seja o seguinte:
+   ```java
+   package org.henryzord;
+
+   public class Ponto {
+       private final float x;
+       private final float y;
+   
+       public Ponto(float x, float y) {
+           this.x = x;
+           this.y = y;
+       }
+   
+       public float getX() {
+           return x;
+       }
+   
+       public float getY() {
+           return y;
+       }
+   
+       public float distanciaEuclidiana(Ponto outro) {
+           return (float) Math.sqrt(Math.pow(this.x - outro.x, 2) + Math.pow(this.y - outro.y, 2));
+       }
+   }
+   ```
+
+4. Escreva os testes da seguinte maneira:
+   ```java
+   import org.henryzord.Ponto;
+
+   import org.junit.jupiter.api.Assertions;
+   
+   public class PontoTest {
+       public PontoTest() {
+       }
+   
+       @org.junit.jupiter.api.Test
+       public void testeDistanciaEuclidiana() {
+           Ponto p1 = new Ponto(0, 0);
+           Ponto p2 = new Ponto(3, 4);
+           double distancia = Math.sqrt(Math.pow(p2.getX() - p1.getX(), 2) + Math.pow(p2.getY() - p1.getY(), 2));
+           Assertions.assertEquals(5.0, distancia);
+       }
+   }
+   ```
+
+5. Você pode rodar os testes individualmente (executando cada classe). A saída esperada deve ser algo como:
+
+   ![junit_single_test.png](../imagens/junit_single_test.png)
+
+6. Você também pode criar uma configuração na IDE para rodar todos os testes do projeto de uma só vez. O exemplo abaixo
+   considera a IDE Intellij IDEA:
+
+   ![junit.gif](../imagens/junit.gif)
+
+7. Os seguintes métodos da classe Assertions são importantes para escrever testes com JUnit. Todas elas lançam exceções
+   em caso de falha:
+   
+   * `Assertions.assertEquals(expected, actual)`: Verifica se dois valores são iguais.  
+   * `Assertions.assertTrue(condition)`: Verifica se um item é verdadeiro.
+   * `Assertions.assertFalse(condition)`: Verifica se um item é falso.
+   * `Assertions.assertThrows(Exception.class, () -> { ... })`: Verifica se uma classe lança uma exceção quando uma 
+      condição é atendida.
+   * `Assertions.assertAll(...)`: agrupa múltiplas verificações em uma chamada só. 
+
+### Com pytest
+
+Da mesma maneira que Java conta com JUnit para teste unitários automatizados, Python conta com pytest. O funcionamento é
+parecido com JUnit, mas é possível agrupar diversos testes em um arquivo.
+
+> [!WARNING]
+> Java usa `CamelCase` para nomes de arquivos, classes e métodos, enquanto Python usa `snake_case` para nomes de 
+> arquivos e métodos. 
+
+1. Instale pytest com o comando `pip install pytest`
+2. Supondo que você tenha um arquivo `ponto.py` com o seguinte código:
+   
+   ```python
+   class Ponto(object):
+        def __init__(self, x: float, y: float):
+            self._x = x
+            self._y = y
+
+        @property 
+        def x(self):
+            return self._x
+
+        @property
+        def y(self):
+            return self._y
+
+        def distancia_euclidiana(self, outro) -> float:
+            return ((self.x - outro.x)**2 + (self.y - outro.y)**2)**(1./2.)
+   ```
+   
+3. Em um arquivo `test_ponto.py`, escreva o seguinte código (pode colocá-lo no mesmo diretório do arquivo ponto.py):
+
+   ```python
+   import pytest
+   from ponto import Ponto
+   
+   
+   def teste_distancia_euclidiana():
+       p1 = Ponto(0, 0)
+       p2 = Ponto(3, 4)
+       # distância esperada: sqrt(3^2 + 4^2) = 5
+       assert pytest.approx(p1.distancia_euclidiana(p2), rel=1e-6) == 5.0
+   ```
+
+4. No diretório que estão os arquivos `ponto.py` e `test_ponto.py`, execute, pela linha de comando:
+   ```bash
+   pytest -v
+   ```
+   
+5. A saída esperada deve ser algo como:
+
+   ![pytest.png](../imagens/pytest.png)
+
+
+### Com QUnit
+
+Em breve!
+
+
 ## Bibliografia
 
 [^1]: Prikladinicki, R., de Almeida, E. S., & de Souza, J. T. (2014). Métodos ágeis para desenvolvimento de software. 

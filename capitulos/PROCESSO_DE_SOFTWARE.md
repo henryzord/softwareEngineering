@@ -47,6 +47,8 @@ Esse modelo de processo de software é adequado quando conhece-se de antemão to
 improvável que eles sejam modificados no futuro, como software embarcado, construção de sistemas críticos (e.g. a 
 corrida espacial dos anos 60), dentre outros sistemas.
 
+![voyager_1.png](../imagens/voyager_1.png)
+
 ### Modelo incremental
 
 "O desenvolvimento incremental é baseado na ideia de desenvolver uma versão inicial, expô-la aos comentários dos 
