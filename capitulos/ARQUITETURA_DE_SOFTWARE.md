@@ -34,7 +34,41 @@ flowchart TD
     
 ```
 
-O framework [Django](https://www.djangoproject.com) utiliza esse modelo de arquitetura.
+O framework [Django](https://www.djangoproject.com) utiliza esse modelo de arquitetura. A organização de pastas em um projeto Django é semelhante 
+à esta:
+
+```
+meuprojeto/
+│
+├── manage.py                # Script principal para rodar comandos do Django
+│
+├── meuprojeto/              # Pasta do projeto (mesmo nome do projeto)
+│   ├── __init__.py
+│   ├── settings.py          # Configurações do projeto (apps, db, etc.)
+│   ├── urls.py              # Arquivo de rotas principais
+│   ├── asgi.py              # Configuração para ASGI
+│   └── wsgi.py              # Configuração para WSGI (deploy)
+│
+├── blog/                    # Um app dentro do projeto
+│   ├── __init__.py
+│   ├── admin.py             # Registro de modelos no Django admin
+│   ├── apps.py              # Configuração do app
+│   ├── models.py            # Modelos (tabelas no banco)
+│   ├── tests.py             # Testes automatizados
+│   ├── views.py             # Views (controladores de requisição/resposta)
+│   ├── urls.py              # Rotas específicas do app
+│   ├── templates/           # Templates HTML
+│   │   └── blog/
+│   │       └── index.html
+│   └── migrations/          # Histórico de migrações do banco
+│       └── __init__.py
+│
+├── static/                  # Arquivos estáticos (CSS, JS, imagens)
+│   └── blog/
+│       └── style.css
+│
+└── requirements.txt         # Dependências do projeto (opcional)
+```
 
 ## Camadas (Layered Architecture)
 
@@ -55,6 +89,30 @@ graph TD
     C --> D[Banco de Dados]
 ```
 
+A organização de arquivos de um projeto organizado em camadas é a seguinte:
+
+```
+empresa_app/
+│
+├── apresentacao/              # Interface com o usuário
+│   ├── __init__.py
+│   └── views.py
+│
+├── aplicacao/                 # Regras de negócio
+│   ├── __init__.py
+│   └── services.py
+│
+├── persistencia/              # Acesso a dados
+│   ├── __init__.py
+│   └── repositories.py
+│
+├── database/                  # Scripts ou conexão com banco
+│   ├── __init__.py
+│   └── schema.sql
+│
+└── main.py
+```
+
 ## Cliente-Servidor
 
 Nesse padrão, o sistema é dividido em dois papéis principais:
@@ -66,6 +124,20 @@ Nesse padrão, o sistema é dividido em dois papéis principais:
 flowchart LR
     C[Cliente] -->|Requisição| S[Servidor]
     S -->|Resposta| C
+```
+
+```
+cliente_servidor/
+│
+├── cliente/                   # Código do cliente
+│   ├── __init__.py
+│   └── cliente.py
+│
+├── servidor/                  # Código do servidor
+│   ├── __init__.py
+│   └── servidor.py
+│
+└── main.py                    # Script principal para subir cliente/servidor
 ```
 
 ## Microservices
@@ -90,6 +162,27 @@ flowchart LR
     S3 --> DB3[(Banco Produtos)]
 ```
 
+```
+microservices/
+│
+├── api_gateway/               # Ponto de entrada da aplicação
+│   └── gateway.py
+│
+├── servico_usuarios/
+│   ├── app.py
+│   └── db_usuarios.py
+│
+├── servico_pagamentos/
+│   ├── app.py
+│   └── db_pagamentos.py
+│
+├── servico_produtos/
+│   ├── app.py
+│   └── db_produtos.py
+│
+└── docker-compose.yml         # Orquestração dos microsserviços
+```
+
 
 ## Event-Driven Architecture (EDA)
 
@@ -104,6 +197,23 @@ flowchart LR
     B --> C1[Consumidor A]
     B --> C2[Consumidor B]
     B --> C3[Consumidor C]
+```
+
+```
+event_driven/
+│
+├── produtor/                  # Publica eventos
+│   └── produtor.py
+│
+├── consumidores/              # Consome eventos
+│   ├── consumidor_a.py
+│   ├── consumidor_b.py
+│   └── consumidor_c.py
+│
+├── event_bus/                 # Barramento de eventos (fila, Kafka, etc.)
+│   └── bus.py
+│
+└── main.py
 ```
 
 ## Pipes and Filters (Tubo e Filtros)
@@ -121,6 +231,24 @@ flowchart LR
     F3 --> O[Saída]
 ```
 
+```
+pipes_filters/
+│
+├── filtros/                   # Cada filtro é um módulo independente
+│   ├── filtro1.py
+│   ├── filtro2.py
+│   └── filtro3.py
+│
+├── pipes/                     # Conexões entre os filtros
+│   └── pipeline.py
+│
+├── dados/                     # Entradas e saídas
+│   ├── entrada.txt
+│   └── saida.txt
+│
+└── main.py
+```
+
 ## Publish-Subscribe
 
 É semelhante ao **Event-Driven**, mas foca no desacoplamento entre produtores e consumidores. O **broker** gerencia a
@@ -136,4 +264,21 @@ flowchart LR
     B --> S1[Subscriber 1]
     B --> S2[Subscriber 2]
     B --> S3[Subscriber 3]
+```
+
+```
+publish_subscribe/
+│
+├── publisher/                 # Publica mensagens
+│   └── publisher.py
+│
+├── broker/                    # Intermediário que gerencia mensagens
+│   └── broker.py
+│
+├── subscribers/               # Múltiplos consumidores
+│   ├── subscriber1.py
+│   ├── subscriber2.py
+│   └── subscriber3.py
+│
+└── main.py
 ```
