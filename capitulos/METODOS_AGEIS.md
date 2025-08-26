@@ -68,7 +68,7 @@ Ken Schwaber e Jeff Sutherland nos anos 90. Seu nome (Scrum) advém de um movime
 avançar no campo por passes e jogadas coordenadas.
 
 O Scrum deve ser entendido como um framework genérico, que descreve em alto nível o papel dos atores envolvidos, os 
-artefatos geraods e as cerimônias que devem ser tomadas após cada etapa. Segundo Prikladinicki e Magno[^1], ele pode ser
+artefatos gerados e as cerimônias que devem ser tomadas após cada etapa. Segundo Prikladinicki e Magno[^1], ele pode ser
 descrito da seguinte forma:
 
 * Três papéis: Dono do Produto, ScrumMaster, e Equipe de Desenvolvimento;
@@ -88,7 +88,7 @@ Segundo Prikladinicki[^1] em seu livro:
 > A Programação Extrema usa boas práticas de engenharia de software de forma intensiva, o tempo todo! Se imaginarmos
 > que essas práticas podem ser controladas por botões que regulam as suas intensidades, XP os posiciona na potência
 > máxima. Por exemplo, se revisar o código é bom, então a revisão do código é feita constantemente por
-> programação em pares. Se testar aumenta a qualidade, então testes automatizados aumentarão mais ain- da a
+> programação em pares. Se testar aumenta a qualidade, então testes automatizados aumentarão mais ainda a
 > qualidade e também facilitarão a tarefa de validação. Se testar antes de entregar evita erros, então fazer
 > Desenvolvimento Orientado a Testes (TDD) será melhor ainda. Se a opinião do cliente fornece feedback e direcionamento
 > para o desenvolvimento, então ter o acompanhamento constante do cliente validará cada funcionalidade. Todas essas
@@ -123,17 +123,56 @@ E seus valores são:
 * Feedback
 * Respeito
 
-A XP é composta pelas seguintes características:
+#### Atores
+ 
+* **Coach:** é a "consciência" da equipe, e a pessoa que garante que as práticas da XP estão sendo seguidas. Porém, 
+  essa figura não é o "chefe", e não cobra entregas nem pressiona os membros da equipe. O coach também não tem voto
+  definitivo na modelagem ou arquitetura do software, possuindo o mesmo peso de voto que os outros membros da equipe.
+  O coach deve ser desempenhado pelo programador que tiver mais experiência em XP da equipe, e deve relembrar a equipe
+  de seguir as práticas dessa metodologia. Caso mais de um programador tenha bastante experiência em XP, este papel
+  pode ser revezado.
+* **Tracker:** o tracker é um desenvolvedor responsável por coletar métricas sobre o projeto e disponibilizá-las à 
+  equipe, de maneira que a mesma possa identificar pontos fortes e fracos no desenvolvimento do software e agir sobre.
+  Podem ser métricas o número de histórias de usuário entregues, número de commits diários, número de builds, testes,
+  cobertura do código, gráfico Burn-Down, etc.
+* **Cliente:** O cliente é a pessoa que contrata o software, e que tem conhecimento das regras de negócio e sabe o que
+  deve ser priorizado em seu desenvolvimento. O cliente deve estar disposto a participar de reuniões e esclarecer 
+  dúvidas dos desenvolvedores, de maneira a facilitar a comunicação e sanar dúvidas pertinentes quando estas aparecem.
+  
+#### Artefatos
 
-* Três papéis: Coach, Tracker e Cliente
-* Dois artefatos: Cartões de história, Metáfora
-* Cerimônias: Jogo do planejamento, releases e iterações. 
+Na XP, geram-se poucos artefatos. Idealmente, o código-fonte bem-documentado e os testes automatizados devem ser 
+suficientes para explicar o uso do software para programadores que não participaram do desenvolvimento do mesmo.
+Todavia, às vezes pode ser necessário desenvolver outros artefatos para atender à legislação, por exemplo.
 
-
-#### Cartões de história
+Podem ser gerados cartões de história, que são pequenas fichas de papel e servem para os clientes e usuários 
+descreverem ou desenharem as funcionalidades que desejam no sistema. 
 
 ![cartao_historia.png](../imagens/cartao_historia.png)
 
+Além disso, podem ser usadas metáforas para explicar o que o sistema deve fazer e como deve se comportar. Uma boa 
+metáfora normaliza o nome das estruturas internas do código-fonte (e.g. nomes de classes) e a arquitetura que o sistema
+deve possuir.
+
+#### Cerimônias
+
+* **Jogo do planejamento:** é realizado no início de um novo ciclo de desenvolvimento, e envolve as atividades de 
+  escrita de cartões de história, estimativa de custo, priorização de cartões, e resolução de dúvidas com o cliente.
+* **Releases:** Uma versão do software que entra em produção. Pode durar de algumas semanas à alguns meses, e é composta
+  por várias iterações. As funcionalidades que entram em produção juntas devem ser escolhidas de maneira que agreguem
+  valor ao software sendo produzido. 
+* **Iterações:** Um ciclo de desenvolvimento no qual novas funcionalidades são entregues ao cliente, que pode decidir
+  se coloca em produção ou não. É composta de alguns dias até algumas semanas.
+
+#### Práticas de desenvolvimento
+
+* Testes automatizados
+* Refatorações
+* Programação em pares
+* Padronização de código
+* Propriedade coletiva
+* Repositório de Código
+* Integração contínua
 
 ## Bibliografia 
 

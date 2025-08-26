@@ -2,9 +2,28 @@
 
 ## O que é?
 
+A Engenharia de Requisitos é a etapa do desenvolvimento na qual as funcionalidades do software são elencadas e 
+priorizadas. 
+
+Os requisitos de um software podem ser divididos em duas categorias: **requisitos de usuário** e **requisitos de 
+sistema**. Os requisitos de usuário descrevem, em linguagem natural, as funcionalidades que o sistema deve apresentar,
+sem se preocupar com detalhes de implementação (por exemplo, bibliotecas a serem usadas, tipo de hardware, etc). Já os
+requisitos de sistema adentram em especificações técnicas, e são elaborados pela equipe de desenvolvimento.
+
+Os requisitos podem ainda ser divididos em dois tipos: **funcionais** e **não-funcionais**. Requisitos funcionais
+descrevem funcionalidades que o sistema deve ter e como ele deve se comportar, dependendo das entradas que são 
+fornecidas. Já os requisitos não-funcionais descrevem **restrições** do sistema. Essa separação não é tão clara assim,
+e requisitos não-funcionais de usuário (e.g. "usuários não-logados não devem ser capazes de acessar o sistema") podem 
+derivar diversos requisitos funcionais (e.g. "o sistema deve ter uma tela de login").
+
+No desenvolvimento ágil, os requisitos são levantados ao mesmo tempo em que o sistema está sendo desenvolvido, através
+de iterações chamadas _sprints_. Já no desenvolvimento usando outros modelos de processo de software, principalmente
+para softwares grandes, os requisitos são levantados anteriormente à etapa de desenvolvimento, gerando um documento 
+chamado **especificação funcional**. 
+
 ## Como é dividida?
 
-Segundo Pressman, a engenharia de requisitos é dividida em sete tarefas: concepção, levantamento, elaboração,
+Segundo Pressman[^1], a engenharia de requisitos é dividida em sete tarefas: concepção, levantamento, elaboração,
 negociação, especificação, validação e gestão.
 
 ### 1. Concepção
