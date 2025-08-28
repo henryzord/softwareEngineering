@@ -212,23 +212,23 @@ parecido com JUnit, mas é possível agrupar diversos testes em um arquivo.
         assert p1.distancia_euclidiana(p2) == approx(correta, rel=1e-2)
    ```
 
-   > [!NOTE]
-   > Onde colocar os arquivos de teste em um projeto Python? 🤔
-   > pytest é flexível com relação a organização do projeto. Frameworks (como Django) terão um diretório específico para colocar
-   > testes. Mas se você não estiver usando nenhum framework, uma sugestão é ter uma pasta para colocar os testes:
-   > ```
-   > meuprojeto/
-   > │
-   > ├── geometria/
-   > │   ├── __init__.py
-   > │   ├── ponto.py
-   > │   ├── circulo.py
-   > │
-   > ├── tests/
-   > │   ├── __init__.py 
-   > │   ├── test_ponto.py
-   > │   ├── test_circulo.py
-   > ```
+> [!NOTE]
+> Onde colocar os arquivos de teste em um projeto Python? 🤔
+> pytest é flexível com relação a organização do projeto. Frameworks (como Django) terão um diretório específico para colocar
+> testes. Mas se você não estiver usando nenhum framework, uma sugestão é ter uma pasta para colocar os testes:
+> ```
+> meuprojeto/
+> │
+> ├── geometria/
+> │   ├── __init__.py
+> │   ├── ponto.py
+> │   ├── circulo.py
+> │
+> ├── tests/
+> │   ├── __init__.py 
+> │   ├── test_ponto.py
+> │   ├── test_circulo.py
+> ```
 
 4. No diretório que estão os arquivos `ponto.py` e `test_ponto.py`, execute, pela linha de comando:
    ```bash
