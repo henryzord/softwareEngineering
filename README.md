@@ -58,7 +58,8 @@ banco de dados) é de escolha livre dos alunos.
 
 * **Peso:** 20%
 * **Nota máxima:** O código-fonte está disponível no repositório do GitHub e possui instruções para sua reprodução; a 
-  reprodução é possível a partir do código-fonte e das instruções.
+  reprodução é possível a partir do código-fonte e das instruções; o código-fonte apresenta poucos problemas quando
+  passado por um linter.
 * **Nota mínima:** O código-fonte não foi entregue, ou foi entregue com atraso, ou não é executável, ou não estão 
   disponíveis instruções de execução.
 
