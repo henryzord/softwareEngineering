@@ -49,7 +49,7 @@ flowchart TD
     actor2["👤 Administrador"]
 
     subgraph Sistema
-        uc1([Login])
+        uc1([Realiza Login])
         uc2([Gera relatório])
         uc3([Gerencia usuários])
     end
