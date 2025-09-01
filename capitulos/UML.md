@@ -306,9 +306,9 @@ classDiagram
         -titular: String
         -saldo: float
    
-        +depositar(valor: float): void  
-        +sacar(valor: float): float  
-        +consultarSaldo(): float  
+        +depositar(valor: float) void  
+        +sacar(valor: float) float  
+        +consultarSaldo() float  
     }
    ```
 
