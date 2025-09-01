@@ -27,6 +27,40 @@ Existem diferentes ferramentas de modelagem UML. Nesta disciplina, usaremos a fe
 
 ## Tipos de Diagramas
 
+### Diagrama de Caso de Uso
+
+Na linguagem UML, o diagrama de caso de uso descreve como os usuários (atores) interagem com o sistema. 
+Ele é útil para capturar os requisitos funcionais do sistema, mostrando as funcionalidades que o sistema deve oferecer e
+como os usuários irão utilizá-las.
+
+Um diagrama de caso de uso é composto por atores (que são desenhados como bonequinhos palito), e elipses que descrevem 
+as atividades desempenhadas pelos atores quando interagem com o sistema:
+
+![use_case_diagram.png](../imagens/use_case_diagram.png)
+(adaptado da [Wikipedia](https://en.wikipedia.org/wiki/Use_case_diagram))
+
+O sistema pode ser representado como um retângulo, dentro do qual as elipses estão contidas. Na linguagem de marcação 
+Mermaid, não existe uma maneira de representar bonequinhos palito, pois ainda não existe representação para esta 
+entidade na linguagem. Todavia, é possível representar os atores como emojis:
+
+```mermaid
+flowchart TD
+    actor1["👤 Usuário"]
+    actor2["👤 Administrador"]
+
+    subgraph Sistema
+        uc1([Login])
+        uc2([Gera relatório])
+        uc3([Gerencia usuários])
+    end
+
+    actor1 --> uc1
+    actor1 --> uc2
+    actor2 --> uc3
+    actor2 --> uc2
+
+```
+
 ### Diagrama de Classes
 
 Segundo a [Wikipedia](https://en.wikipedia.org/wiki/Class_diagram):
