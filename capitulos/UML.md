@@ -400,4 +400,4 @@ classDiagram
 ## Recursos adicionais
 
 * [Mermaid (ferramenta de design)](https://mermaid.live)
-* [Mermaid (Documentação)](https://mermaid.js.org/syntax/flowchart.html)
+* [Mermaid (Documentação)](https://docs.mermaidchart.com/mermaid-oss/syntax/flowchart.html)
