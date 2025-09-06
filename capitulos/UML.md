@@ -317,13 +317,13 @@ classDiagram
    ```mermaid
     classDiagram
         class Funcionario {
-        -nome: String 
-        -salario: float
+        #nome: String 
+        #salario: float
         +exibirDados() void
     }
     
     class Gerente {
-        -departamento: String 
+        #departamento: String 
    
         +exibirDados() void 
     }
