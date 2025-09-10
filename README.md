@@ -75,6 +75,11 @@ banco de dados) é de escolha livre dos alunos.
 * **Nota máxima:** O software atende completamente às expectativas do cliente (faz o que se propõe a fazer). 
 * **Nota mínima:** O software não atende às expectativas do cliente.
 
+## Recursos adicionais
+
+* [Tutorial de Documentação com MKDocs](github.com/CTISM-Prof-Henry/docsTutorial)
+* [Banco de Dados Frontend](github.com/CTISM-Prof-Henry/indexedDB)
+
 ## Bibliografia
 
 Eu preparo o conteúdo das minhas aulas (e das provas) com base nos livros!
