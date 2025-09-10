@@ -54,6 +54,14 @@ banco de dados) é de escolha livre dos alunos.
 * **Nota mínima:** A documentação não está hospedada no GitHub Pages; a documentação não é gerada automaticamente a 
   partir dos comentários do código-fonte.
 
+##### Testes de Software
+
+* **Peso:** 10%
+* **Nota máxima:** Pelo menos três testes de software (unitários, de componente, de integração) **automatizados** foram
+  implementados e estão testando aspectos úteis do software.
+* **Nota mínima:** Não foram implementados pelo menos três testes, ou os testes são **manuais**, ou os testes não cobrem
+  aspectos relevantes do funcionamento do software.
+
 ##### Código-fonte
 
 * **Peso:** 20%
@@ -71,7 +79,7 @@ banco de dados) é de escolha livre dos alunos.
 
 ##### Produto final (software)
 
-* **Peso:** 30%
+* **Peso:** 20%
 * **Nota máxima:** O software atende completamente às expectativas do cliente (faz o que se propõe a fazer). 
 * **Nota mínima:** O software não atende às expectativas do cliente.
 
