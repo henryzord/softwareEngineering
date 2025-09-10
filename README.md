@@ -75,11 +75,6 @@ banco de dados) é de escolha livre dos alunos.
 * **Nota máxima:** O software atende completamente às expectativas do cliente (faz o que se propõe a fazer). 
 * **Nota mínima:** O software não atende às expectativas do cliente.
 
-## Recursos adicionais
-
-* [Tutorial de Documentação com MKDocs](github.com/CTISM-Prof-Henry/docsTutorial)
-* [Banco de Dados Frontend](github.com/CTISM-Prof-Henry/indexedDB)
-
 ## Bibliografia
 
 Eu preparo o conteúdo das minhas aulas (e das provas) com base nos livros!
@@ -94,6 +89,8 @@ Eu preparo o conteúdo das minhas aulas (e das provas) com base nos livros!
 
 ## Outros recursos
 
+ [Tutorial de Documentação com MKDocs](https://github.com/CTISM-Prof-Henry/docsTutorial)
+* [Banco de Dados Frontend](https://github.com/CTISM-Prof-Henry/indexedDB)
 * [Tutorial configuração GitHub](https://docs.google.com/presentation/d/1JtJM38hLLYEJfo3QtYNRS3s0HGgA4PkT)
 * [Gestão de Projetos no GitHub](https://docs.google.com/presentation/d/1Ne7fYNrFPpXlzBTle5jOIbylwRhYKOqo/edit?usp=sharing&ouid=104461789119995870811&rtpof=true&sd=true)
 * https://excalidraw.com
