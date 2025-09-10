@@ -89,7 +89,7 @@ Eu preparo o conteúdo das minhas aulas (e das provas) com base nos livros!
 
 ## Outros recursos
 
- [Tutorial de Documentação com MKDocs](https://github.com/CTISM-Prof-Henry/docsTutorial)
+* [Tutorial de Documentação com MKDocs](https://github.com/CTISM-Prof-Henry/docsTutorial)
 * [Banco de Dados Frontend](https://github.com/CTISM-Prof-Henry/indexedDB)
 * [Tutorial configuração GitHub](https://docs.google.com/presentation/d/1JtJM38hLLYEJfo3QtYNRS3s0HGgA4PkT)
 * [Gestão de Projetos no GitHub](https://docs.google.com/presentation/d/1Ne7fYNrFPpXlzBTle5jOIbylwRhYKOqo/edit?usp=sharing&ouid=104461789119995870811&rtpof=true&sd=true)
