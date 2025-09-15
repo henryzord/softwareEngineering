@@ -67,13 +67,6 @@ o método `soma` da classe `Calculadora`, simula-se a digitação de dois númer
 Os testes de integração verificam a interface entre componentes e como eles se comunicam. Por exemplo, pode-se testar 
 como um componente `Teclado` coleta as informações digitadas pelo usuário e as repassa para o componente `Calculadora`.
 
-### Funcionais/Aceitação
-
-São testes que avaliam o sistema do ponto de vista da interface externa (por exemplo, a interface Web de um site), 
-levando em consideração a perspectiva do usuário final que fará uso do software. Testes funcionais garantem que o 
-sistema realiza as funções esperadas, enquanto testes de aceitação validam que o sistema atende aos requisitos acordados 
-com o cliente ou usuário final.
-
 ## Escrevendo testes unitários
 
 O repositório [CTISM-Prof-Henry/softwareTesting](https://github.com/CTISM-Prof-Henry/softwareTesting) traz exemplos de como
