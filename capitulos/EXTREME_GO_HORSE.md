@@ -11,9 +11,6 @@ que devem ser utilizados pelos _Go Horsers_ (programadores que aderem a este mé
   <img src="../imagens/go_horse_mug.jpeg" alt="uma caneca com o logo do Extreme Go Horse" width="45%">
 </p>
 
-
-<img src= alt= width="320px">
-
 ## Princípios
 
 1. **Pensou, não é XGH.** XGH não pensa, faz a primeira coisa que vem à mente. Não existe segunda opção, a única opção é a mais rápida.
