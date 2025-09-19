@@ -51,21 +51,15 @@ flowchart LR
 
 ### Unitários
 
-Os testes unitários verificam pequenas funcionalidades de um componente. Por exemplo, se tivermos uma classe 
-`Calculadora`, podem-se escrever tantos testes unitários quanto forem os métodos da calculadora (e.g. `testaSoma`, 
-`testaMultiplicacao`, etc).
+Os testes unitários verificam pequenas funcionalidades de um software. Por exemplo, se tivermos um site que calcula aplicações financeiras e tributos, podemos ter tantos testes unitários quanto tivermos aplicações financeiras (e.g. CDB, Ouro, Ações, Tesouro Direto), e tributos (ICMS, IOF, Imposto de Renda, etc).
 
 ### De Componentes
 
-Um teste de componente assume um componente completo (e.g. `Calculadora`) de forma isolada, testando sua lógica interna
-e sua interação com interfaces externas. Outros componentes **não são** testados em conjunto quando testa-se um 
-componente em específico; são usadas entradas simuladas (mock ups), com um retorno esperado. Por exemplo, para testar
-o método `soma` da classe `Calculadora`, simula-se a digitação de dois números, com o resultado esperado já conhecido.
+Testes de componente **não são** um coletivo de testes unitários, mas sim uma maneira de testar um componente de maneira isolada. No nosso exemplo anterior, um componente pode ser a página do site que mostra as aplicações financeiras. Teríamos então um teste de componente para ver se todas as opções de aplicações estão sendo listadas, se é possível inserir valores em campos de texto, etc.
 
 ### Integração
 
-Os testes de integração verificam a interface entre componentes e como eles se comunicam. Por exemplo, pode-se testar 
-como um componente `Teclado` coleta as informações digitadas pelo usuário e as repassa para o componente `Calculadora`.
+Os testes de integração verificam o conjunto de componentes de software. No exemplo anterior, o site inteiro poderia ser testado: a página inicial, a página de aplicações financeiras, a página de cálculo de tributos, a página de contato, etc.
 
 ## Escrevendo testes unitários
 
