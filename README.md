@@ -97,6 +97,7 @@ Eu preparo o conteúdo das minhas aulas (e das provas) com base nos livros!
 
 ## Outros recursos
 
+* [Tutorial de testes automatizados](https://github.com/CTISM-Prof-Henry/softwareTesting)
 * [Tutorial de Documentação com MKDocs](https://github.com/CTISM-Prof-Henry/docsTutorial)
 * [Banco de Dados Frontend](https://github.com/CTISM-Prof-Henry/indexedDB)
 * [Tutorial configuração GitHub](https://docs.google.com/presentation/d/1JtJM38hLLYEJfo3QtYNRS3s0HGgA4PkT)
