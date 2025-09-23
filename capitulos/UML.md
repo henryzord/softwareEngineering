@@ -280,7 +280,7 @@ classDiagram
     
     Objeto <|-- Brinquedo
     
-    Cachorro "1" --> "*" Brinquedo 
+    Cachorro "1" -- "*" Brinquedo 
 ```
 
 > [!NOTE]
