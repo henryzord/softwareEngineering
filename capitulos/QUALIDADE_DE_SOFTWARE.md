@@ -47,7 +47,7 @@ Novamente, é subdividida em oito categorias, definidas pela ISO 25010:
 
 ## Como mensurar a qualidade?
 
-A maneira de mensurar qualidade depende do que a equipe de desenvolvimento definir. Não existem critérios rígidos, e 
+A maneira de mensurar qualidade depende do que a equipe de desenvolvimento definir junto com o cliente. Não existem critérios rígidos, e 
 diferentes métricas podem ser adotadas.
 
 Os passos para mensurar a qualidade são os seguintes:
