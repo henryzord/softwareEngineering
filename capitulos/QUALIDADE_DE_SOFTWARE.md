@@ -21,11 +21,11 @@ e mensurar os aspectos de qualidade, sendo o modelo de qualidade propriamente.
 
 É subdividida em 5 categorias, definidas pela ISO 25010:
 
-* **Eficácia:** o software cumpre os objetivos? 
-* **Eficiência:** O software atende os requisitos exigindo pouco esforço do usuário para sua manipulação?
-* **Satisfação:** O usuário ficou satisfeito?
-* **Liberdade de risco:** O software, ao ser usado, oferece riscos à integridade do usuário?
-* **Cobertura de contexto:** O software funciona sob diferentes condições de uso?
+1. **Eficácia:** o software cumpre os objetivos? 
+2. **Eficiência:** O software atende os requisitos exigindo pouco esforço do usuário para sua manipulação?
+3. **Satisfação:** O usuário ficou satisfeito?
+4. **Liberdade de risco:** O software, ao ser usado, oferece riscos à integridade do usuário?
+5. **Cobertura de contexto:** O software funciona sob diferentes condições de uso?
 
 
 <img alt="escavadeira" src="../imagens/escavadeira.webp" width="400px">
@@ -34,14 +34,14 @@ e mensurar os aspectos de qualidade, sendo o modelo de qualidade propriamente.
 
 Novamente, é subdividida em oito categorias, definidas pela ISO 25010:
 
-* **Compatibilidade:** capacidade de coexistir ou interagir com outros sistemas.
-* **Segurança:** proteção de dados e controle de acesso.
-* **Adequação funcional:** cobertura e correção das funções.
-* **Confiabilidade:** disponibilidade, tolerância a falhas, etc
-* **Usabilidade:** facilidade de aprendizado e operação.
-* **Eficiência de Desempenho:** tempo de resposta, uso de recursos.
-* **Manutenibilidade:** facilidade de modificar, corrigir, evoluir.
-* **Portabilidade:** capacidade de ser transferido para outros ambientes.
+1. **Compatibilidade:** capacidade de coexistir ou interagir com outros sistemas.
+2. **Segurança:** proteção de dados e controle de acesso.
+3. **Adequação funcional:** cobertura e correção das funções.
+4. **Confiabilidade:** disponibilidade, tolerância a falhas, etc
+5. **Usabilidade:** facilidade de aprendizado e operação.
+6. **Eficiência de Desempenho:** tempo de resposta, uso de recursos.
+7. **Manutenibilidade:** facilidade de modificar, corrigir, evoluir.
+8. **Portabilidade:** capacidade de ser transferido para outros ambientes.
 
 <img alt="relógio de luxo" src="../imagens/patek_philippe.png" width="400px">
 
