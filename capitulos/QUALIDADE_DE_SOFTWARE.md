@@ -53,6 +53,10 @@ Os passos para mensurar a qualidade são os seguintes:
    software possuirá os mesmos requisitos!
 2. Escolher uma ou mais métricas para cada um dos itens selecionados. 
 3. Definir como essas métricas serão medidas e coletadas.
+4. Definir a meta. Por exemplo:
+   * A categoria é **portabilidade**
+   * A métrica é **número de versões de Android suportadas pelo software**
+   * A meta é **as últimas 5 versões**
 
 ## Bibliografia
 
