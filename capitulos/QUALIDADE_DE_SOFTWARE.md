@@ -27,8 +27,11 @@ e mensurar os aspectos de qualidade, sendo o modelo de qualidade propriamente.
 4. **Liberdade de risco:** O software, ao ser usado, oferece riscos à integridade do usuário?
 5. **Cobertura de contexto:** O software funciona sob diferentes condições de uso?
 
-
 <img alt="escavadeira" src="../imagens/escavadeira.webp" width="400px">
+
+### Satisfação
+
+blablablabla....
 
 ## Qualidade do Produto
 
@@ -44,6 +47,10 @@ Novamente, é subdividida em oito categorias, definidas pela ISO 25010:
 8. **Portabilidade:** capacidade de ser transferido para outros ambientes.
 
 <img alt="relógio de luxo" src="../imagens/patek_philippe.png" width="400px">
+
+### Segurança
+
+blablablablabla...
 
 ## Como mensurar a qualidade?
 
