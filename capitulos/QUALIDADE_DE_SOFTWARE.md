@@ -24,10 +24,11 @@ e mensurar os aspectos de qualidade, sendo o modelo de qualidade propriamente.
 * **Eficácia:** o software cumpre os objetivos? 
 * **Eficiência:** O software atende os requisitos exigindo pouco esforço do usuário para sua manipulação?
 * **Satisfação:** O usuário ficou satisfeito?
-* **Liberdade de risco:** O software aplica proteções necessárias aos dados sendo manipulados? O software evita danos a
-  propriedades e a integridade de pessoas? Evita riscos à saúde e ao meio ambiente?
+* **Liberdade de risco:** O software, ao ser usado, oferece riscos à integridade do usuário?
 * **Cobertura de contexto:** O software funciona sob diferentes condições de uso?
 
+
+<img alt="escavadeira" src="../imagens/escavadeira.webp" width="400px">
 
 ## Qualidade do Produto
 
@@ -41,6 +42,8 @@ Novamente, é subdividida em oito categorias, definidas pela ISO 25010:
 * **Eficiência de Desempenho:** tempo de resposta, uso de recursos.
 * **Manutenibilidade:** facilidade de modificar, corrigir, evoluir.
 * **Portabilidade:** capacidade de ser transferido para outros ambientes.
+
+<img alt="relógio de luxo" src="../imagens/patek_philippe.png" width="400px">
 
 ## Como mensurar a qualidade?
 
